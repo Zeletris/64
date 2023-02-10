@@ -26,13 +26,37 @@ script_functions = { -- table(fa465db)
 					[5] = '	public void GetBattleAbuseLog(ref Dictionary<string, object> dictAbuse, ref Dictionary<string, object> dictSimul, bool isWin, Nullable<int> continueCount, Nullable<int> allyTeamPower, bool isSimul = False) { }',
 					[6] = '0x17EC100',
 				},
-				[4] = { -- table(686c219)
+				[4] = { -- table(686c210)
 					[1] = '0x17EC250',
 					[2] = '~A8 NOP',
 					[3] = true,
 					[4] = 'public sealed class IngameStatisticsManager : MonoBehaviour_SyncData_Auto ',
 					[5] = '	public void SendBattleAbuseLog(bool isWin, Nullable<int> continueCount, Nullable<int> allyTeamPower) { }',
 					[6] = '0x17EC250',
+				},
+				[5] = { -- table(686c214)
+					[1] = '0x1792388',
+					[2] = '~A8 NOP',
+					[3] = true,
+					[4] = 'public abstract class IngameMain : MonoBehaviour, ISyncData ',
+					[5] = '	protected void ProcessBattleAbuseLog() { }',
+					[6] = '0x1792388',
+				},
+				[6] = { -- table(686c217)
+					[1] = '0x2AEDC24',
+					[2] = '~A8 NOP',
+					[3] = true,
+					[4] = 'public static class FPNMLogger ',
+					[5] = '	private static void SendLog(int logId, int detailId, string pcSeq, Dictionary<string, object> logDataDic) { }',
+					[6] = '0x2AEDC24',
+				},
+				[7] = { -- table(686c213)
+					[1] = '0x2AEEB74',
+					[2] = '~A8 NOP',
+					[3] = true,
+					[4] = 'public static class FPNMLogger ',
+					[5] = '	public static void SetBattleAbuseLogData(ref Dictionary<string, object> dicAbuse) { }',
+					[6] = '0x2AEEB74',
 				},
 			},
 			['name'] = 'Instant Win',
@@ -63,12 +87,89 @@ script_functions = { -- table(fa465db)
 					[5] = '	public void SendBattleAbuseLog(bool isWin, Nullable<int> continueCount, Nullable<int> allyTeamPower) { }',
 					[6] = '0x17EC250',
 				},
+				[4] = { -- table(686c214)
+					[1] = '0x1792388',
+					[2] = '~A8 NOP',
+					[3] = true,
+					[4] = 'public abstract class IngameMain : MonoBehaviour, ISyncData ',
+					[5] = '	protected void ProcessBattleAbuseLog() { }',
+					[6] = '0x1792388',
+				},
+				[5] = { -- table(686c217)
+					[1] = '0x2AEDC24',
+					[2] = '~A8 NOP',
+					[3] = true,
+					[4] = 'public static class FPNMLogger ',
+					[5] = '	private static void SendLog(int logId, int detailId, string pcSeq, Dictionary<string, object> logDataDic) { }',
+					[6] = '0x2AEDC24',
+				},
+				[6] = { -- table(686c213)
+					[1] = '0x2AEEB74',
+					[2] = '~A8 NOP',
+					[3] = true,
+					[4] = 'public static class FPNMLogger ',
+					[5] = '	public static void SetBattleAbuseLogData(ref Dictionary<string, object> dicAbuse) { }',
+					[6] = '0x2AEEB74',
+				},
 			},
 			['name'] = 'God Mode/One Hit',
 		},
+		[3] = { -- table(eda72de)
+			['edits'] = { -- table(7b6bcbf)
+				[1] = { -- table(10abf8c)
+					[1] = '0x1788F08',
+					[2] = '~A8 MOV W0, #0',
+					[3] = true,
+					[4] = 'public abstract class IngameMain : MonoBehaviour, ISyncData ',
+					[5] = '	private int get_CurrentEnemyCost() { }',
+					[6] = '0x1788F08',
+				},
+				[2] = { -- table(a3866d5)
+					[1] = '0x17EC100',
+					[2] = '~A8 NOP',
+					[3] = true,
+					[4] = 'public sealed class IngameStatisticsManager : MonoBehaviour_SyncData_Auto ',
+					[5] = '	public void GetBattleAbuseLog(ref Dictionary<string, object> dictAbuse, ref Dictionary<string, object> dictSimul, bool isWin, Nullable<int> continueCount, Nullable<int> allyTeamPower, bool isSimul = False) { }',
+					[6] = '0x17EC100',
+				},
+				[3] = { -- table(716deea)
+					[1] = '0x17EC250',
+					[2] = '~A8 NOP',
+					[3] = true,
+					[4] = 'public sealed class IngameStatisticsManager : MonoBehaviour_SyncData_Auto ',
+					[5] = '	public void SendBattleAbuseLog(bool isWin, Nullable<int> continueCount, Nullable<int> allyTeamPower) { }',
+					[6] = '0x17EC250',
+				},
+				[4] = { -- table(686c214)
+					[1] = '0x1792388',
+					[2] = '~A8 NOP',
+					[3] = true,
+					[4] = 'public abstract class IngameMain : MonoBehaviour, ISyncData ',
+					[5] = '	protected void ProcessBattleAbuseLog() { }',
+					[6] = '0x1792388',
+				},
+				[5] = { -- table(686c217)
+					[1] = '0x2AEDC24',
+					[2] = '~A8 NOP',
+					[3] = true,
+					[4] = 'public static class FPNMLogger ',
+					[5] = '	private static void SendLog(int logId, int detailId, string pcSeq, Dictionary<string, object> logDataDic) { }',
+					[6] = '0x2AEDC24',
+				},
+				[6] = { -- table(686c213)
+					[1] = '0x2AEEB74',
+					[2] = '~A8 NOP',
+					[3] = true,
+					[4] = 'public static class FPNMLogger ',
+					[5] = '	public static void SetBattleAbuseLogData(ref Dictionary<string, object> dicAbuse) { }',
+					[6] = '0x2AEEB74',
+				},
+			},
+			['name'] = 'Enemy 0 turn',
+		},
 	},
 }
-generated_script_title = "7DS Script by Zeletris"
+generated_script_title = "7DS Script by Zeletris V2"
 target_process = "com.netmarble.nanagb"
 target_name = "7DS"
 arch = gg.getTargetInfo()
@@ -240,7 +341,6 @@ end
 print("ㅤ")
 print("                                    ♛ Script By Zeletris ♛")
 
-bchome()
 
 while true do
 	if gg.isVisible() then
@@ -249,4 +349,3 @@ while true do
 	end
 	gg.sleep(100)
 end
-
